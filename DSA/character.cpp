@@ -1,22 +1,31 @@
-//Check whether a character is an alphabet or not
 #include <iostream>
 using namespace std;
-void checkchar(char a)
-{
-    if ((a>='A' && a<='Z') || (a>='a' && a<='z'))
+int main(){
+    int a,b,c,d;
+    int fun;
+    cout<<"enter your number:"<<endl;
+    cin>>a;
+    cout<<"which operation you want (square-2,cube-3,quad-4):"<<endl;
+    cin>>fun;
+    if (fun==2)
     {
-        cout<<"it is a character!";
+        b=a*a;
+        cout<<"your square of number is:"<<b;
     }
     else
     {
-        cout<<"it is not a character!";
+        if (fun==3)
+        {
+            c=a*a*a;
+            cout<<"your cube of number is:"<<c;
+        
+        }
+        else
+        {
+            d=a*a*a*a;
+            cout<<"your quad of number is:"<<d;
+        }
+        
     }
-    
-}
-int main()
-{
-    char a;
-    cin>>a;
-    checkchar(a);
     return 0;
 }
